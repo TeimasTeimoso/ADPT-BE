@@ -1,6 +1,6 @@
 import torch
 from torch import cuda
-from model.model import ADPTModel
+from adpt.model.model import ADPTModel
 from transformers import DistilBertTokenizer
 from typing import Tuple, List
 

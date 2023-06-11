@@ -1,6 +1,6 @@
 from flask import Flask
-from routes import routes
-from logger import configure_logger
+from adpt.routes.text import routes
+from adpt.logger import configure_logger
 
 app = Flask(__name__)
 
