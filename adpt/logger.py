@@ -7,3 +7,5 @@ def configure_logger(environment: str) -> logging.Logger:
         logging.basicConfig(level=logging.INFO, filename='app.log', filemode='w')
 
     return logging.getLogger(__name__)
+
+logger = configure_logger('prod')
