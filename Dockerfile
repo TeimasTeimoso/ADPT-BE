@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN mkdir models
+RUN mkdir -p models || true
 
 RUN pip3 install -r requirements.txt && \
     pip3 install torch --index-url https://download.pytorch.org/whl/cpu
@@ -15,4 +15,4 @@ RUN mv adpt_finetuned_distilbert_cnn.bin models
 
 EXPOSE 5000
 
-CMD ["python3", "app.py"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:5000"]
