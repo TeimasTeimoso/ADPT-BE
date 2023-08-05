@@ -1,9 +1,7 @@
 from flask import Flask
 from adpt.routes.text import routes
-from adpt.logger import configure_logger
 
 app = Flask(__name__)
-
 app.register_blueprint(routes)
 
 @app.route('/')
