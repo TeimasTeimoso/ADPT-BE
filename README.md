@@ -4,7 +4,7 @@ _ADPT-BE_ stands for _Automatic Detection of Persuation Techniques - Backend_.
 
 The repository contains a small Flask application that loads the model and exposes an endpoint to perform model inference. 
 
-To have a better understanding of the model and how it was created, you can check[ADPT-AI](https://github.com/TeimasTeimoso/ADPT-AI) which contains the code and research papers produced during the work.
+To have a better understanding of the model and how it was created, you can check [ADPT-AI](https://github.com/TeimasTeimoso/ADPT-AI) which contains the code and research papers produced during the work.
 
 Currently, the model created only supports inference for textual data. There are plans in the future to add image classification.
 
